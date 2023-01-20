@@ -71,12 +71,6 @@ def pre_wraper(source_dir):
                     vid2pics(file_path,output_path + "/"+lable+ "/"+group+ "/"+filename) # need to distiguish between lable and groups
 
 
-
-
-pre_wraper("data")
-
-
-     
     
 
 
