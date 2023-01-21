@@ -20,7 +20,7 @@ class MyDataset(object):
         self._label_fp = label_fp
         self._annonation_direc = annonation_direc
 
-        self.fps = 25 if modality == "video" else 16000
+        self.fps = 25
         self.is_var_length = True
         self.use_boundary = use_boundary
         self.label_idx = -3
