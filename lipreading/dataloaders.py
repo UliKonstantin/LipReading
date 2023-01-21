@@ -2,7 +2,7 @@ import torch
 import numpy as np
 from lipreading.preprocess import *
 from lipreading.dataset import MyDataset, pad_packed_collate
-
+#15:43
 
 def get_preprocessing_pipelines():
     # -- preprocess for the video stream
