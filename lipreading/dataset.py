@@ -9,7 +9,7 @@ from lipreading.utils import read_txt_lines
 
 
 class MyDataset(object):
-    def __init__(self, data_partition, data_dir, label_fp, annonation_direc=None,
+    def __init__(self, data_partition, data_dir, label_fp, annonation_direc='abc',
         preprocessing_func=None, data_suffix='.npz', use_boundary=False):
         assert os.path.isfile( label_fp ), \
             f"File path provided for the labels does not exist. Path iput: {label_fp}."
@@ -29,7 +29,7 @@ class MyDataset(object):
 
         if self.use_boundary or (self.is_var_length and data_partition == "train"):
             assert self._annonation_direc is not None, \
-                "Directory path provided for the sequence timestamp (--annonation-direc) should not be empty."
+                "Directory path provided for the sequence timestamp (--annonation-direc) {}should not be empty."
             assert os.path.isdir(self._annonation_direc), \
                 f"Directory path provided for the sequence timestamp (--annonation-direc) does not exist. Directory input: {self._annonation_direc}"
 
