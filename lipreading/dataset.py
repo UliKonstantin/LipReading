@@ -9,7 +9,7 @@ from lipreading.utils import read_txt_lines
 
 
 class MyDataset(object):
-    def __init__(self, modality, data_partition, data_dir, label_fp, annonation_direc=None,
+    def __init__(self, data_partition, data_dir, label_fp, annonation_direc=None,
         preprocessing_func=None, data_suffix='.npz', use_boundary=False):
         assert os.path.isfile( label_fp ), \
             f"File path provided for the labels does not exist. Path iput: {label_fp}."
